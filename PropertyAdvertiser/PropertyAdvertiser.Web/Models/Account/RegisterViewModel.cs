@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PropertyAdvertiser.Data.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -8,6 +9,24 @@ namespace PropertyAdvertiser.Web.Models.AccountViewModels
 {
     public class RegisterViewModel
     {
+        [Required]
+        [MaxLength(DataConstants.NameMaxLength)]
+        [MinLength(DataConstants.NameMinLength)]
+        public string Username { get; set; }
+
+        [Required]
+        [MaxLength(DataConstants.NameMaxLength)]
+        [MinLength(DataConstants.NameMinLength)]
+        public string Name { get; set; }
+
+        [Required]
+        [MaxLength(DataConstants.NameMaxLength)]
+        [MinLength(DataConstants.NameMinLength)]
+        public string Surname { get; set; }
+
+        [Display(Name = "Work for agency")]
+        public bool WorkForAgency { get; set; }
+
         [Required]
         [EmailAddress]
         [Display(Name = "Email")]

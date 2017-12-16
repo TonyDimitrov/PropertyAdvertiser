@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PropertyAdvertiser.Data.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -9,8 +10,9 @@ namespace PropertyAdvertiser.Web.Models.AccountViewModels
     public class LoginViewModel
     {
         [Required]
-        [EmailAddress]
-        public string Email { get; set; }
+        [MaxLength(DataConstants.NameMaxLength)]
+        [MinLength(DataConstants.NameMinLength)]
+        public string Username { get; set; }
 
         [Required]
         [DataType(DataType.Password)]

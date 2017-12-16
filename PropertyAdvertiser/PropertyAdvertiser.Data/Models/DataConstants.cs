@@ -14,8 +14,8 @@
         public const int LocationMaxLength = 100;
         public const int LocationMinLength = 5;
 
-        public const int ContactNameMaxLength = 50;
-        public const int ContactNameMinLength = 3;
+        public const int NameMaxLength = 50;
+        public const int NameMinLength = 3;
 
         public const int ContactPhoneMaxLength = 15;
         public const int ContactPhoneMinLength = 6;

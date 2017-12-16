@@ -41,6 +41,7 @@ namespace PropertyAdvertiser.Web
             // Add application services.
             //  services.AddTransient<IEmailSender, EmailSender>();
             services.AddAutoMapper();
+            services.AddDomainServices();
             services.AddMvc();
         }
 
@@ -67,9 +68,15 @@ namespace PropertyAdvertiser.Web
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
+                    name: "areas",
+                    template: "{area}/{controller}/{action}/{id?}");
+
+                routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
+
             });
+
         }
     }
 }

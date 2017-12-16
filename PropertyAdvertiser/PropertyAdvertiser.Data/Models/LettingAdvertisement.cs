@@ -22,8 +22,8 @@
         [MinLength(DataConstants.LocationMinLength)]
         public string Location { get; set; }
         [Required]
-        [MaxLength(DataConstants.ContactNameMaxLength)]
-        [MinLength(DataConstants.ContactNameMinLength)]
+        [MaxLength(DataConstants.NameMaxLength)]
+        [MinLength(DataConstants.NameMinLength)]
         public string ContactName { get; set; }
         [Required]
         public string ContactEmail { get; set; }

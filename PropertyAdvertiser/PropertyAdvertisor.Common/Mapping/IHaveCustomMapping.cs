@@ -1,4 +1,4 @@
-﻿namespace PropertyAdvertiser.Web.Infrastructure.Mapping
+﻿namespace PropertyAdvertiser.Common.Mapping
 {
     using AutoMapper;
 

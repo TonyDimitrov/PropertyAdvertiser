@@ -2,7 +2,7 @@
 namespace PropertyAdvertiser.Web.Infrastructure.Mapping
 {
     using AutoMapper;
-    //using Common.Mapping;
+    using Common.Mapping;
     using System;
     using System.Linq;
 
